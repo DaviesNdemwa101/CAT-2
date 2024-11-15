@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://yourwebsite.com/</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Obituary Submission Form -->
+  <url>
+    <loc>https://yourwebsite.com/submit-obituary</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- View Obituaries -->
+  <url>
+    <loc>https://yourwebsite.com/view-obituaries</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Individual Obituaries -->
+  <url>
+    <loc>https://yourwebsite.com/view-obituary?id=1</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Repeat the above <url> entry for each obituary page -->
+  <url>
+    <loc>https://yourwebsite.com/view-obituary?id=2</loc>
+    <lastmod>2024-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

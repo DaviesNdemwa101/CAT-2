@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Obituaries</title>
+    <meta name="description" content="Submit and view obituaries on our platform. Share and honor the memories of loved ones.">
+<meta name="keywords" content="obituaries, funeral, memorial, death, tribute, obituary submissions">
+<meta name="author" content="Your Name or Platform Name">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ObituaryNotice",
+      "name": "Name of the Deceased",
+      "dateOfDeath": "2024-11-15",
+      "dateOfBirth": "1980-01-01",
+      "description": "A brief tribute to the person who passed away.",
+      "author": {
+        "@type": "Person",
+        "name": "Author's Name"
+      }
+    }
+    </script>
+    <!-- Open Graph Meta Tags for Facebook -->
+<meta property="og:title" content="Submit an Obituary">
+<meta property="og:description" content="Submit and view obituaries on our platform. Share the memories of your loved ones.">
+<meta property="og:image" content="URL_to_image.jpg">
+<meta property="og:url" content="http://yourwebsite.com">
+<meta property="og:type" content="website">
+<link rel="canonical" href="http://yourwebsite.com/obituary_page">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>All Obituaries</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Date of Death</th>
+            <th>Content</th>
+            <th>Author</th>
+        </tr>
+        {% for obituary in obituaries %}
+        <tr>
+            <td>{{ obituary.name }}</td>
+            <td>{{ obituary.date_of_birth }}</td>
+            <td>{{ obituary.date_of_death }}</td>
+            <td>{{ obituary.content }}</td>
+            <td>{{ obituary.author }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/submit">Submit a New Obituary</a>
+</body>
+</html>

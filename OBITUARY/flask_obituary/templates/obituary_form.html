@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit an Obituary</title>
+    <meta name="description" content="Submit and view obituaries on our platform. Share and honor the memories of loved ones.">
+<meta name="keywords" content="obituaries, funeral, memorial, death, tribute, obituary submissions">
+<meta name="author" content="Your Name or Platform Name">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ObituaryNotice",
+      "name": "Name of the Deceased",
+      "dateOfDeath": "2024-11-15",
+      "dateOfBirth": "1980-01-01",
+      "description": "A brief tribute to the person who passed away.",
+      "author": {
+        "@type": "Person",
+        "name": "Author's Name"
+      }
+    }
+    </script>
+<!-- Open Graph Meta Tags for Facebook -->
+<meta property="og:title" content="Submit an Obituary">
+<meta property="og:description" content="Submit and view obituaries on our platform. Share the memories of your loved ones.">
+<meta property="og:image" content="gemini.jpg.jfif">
+<meta property="og:url" content="http://yourwebsite.com">
+<meta property="og:type" content="website">
+<link rel="canonical" href="http://yourwebsite.com/obituary_page">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Submit an Obituary</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+        <label for="date_of_death">Date of Death:</label>
+        <input type="date" id="date_of_death" name="date_of_death" required><br><br>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <a href="/">Back to All Obituaries</a>
+</body>
+</html>
